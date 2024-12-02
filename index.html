@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <script src="/Javascript/script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Tipsy Troll Tavern</title>
   </head>
   <body>
@@ -13,10 +13,10 @@
         <div class="nav">
           <h1>Tipsy Troll Tavern</h1>
           <ul>
-            <li>About us</li>
-            <li>Top brews</li>
-            <li>Images</li>
-            <li>Contact us</li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#brews">Brews</a></li>
+            <li><a href="">Images</a></li>
+            <li><a href="#contacts">Contact us</a></li>
           </ul>
         </div>
       </header>
@@ -46,11 +46,106 @@
           destination. Your seat by the fire is waiting.
         </article>
       </div>
-      <!-- <div class="featured">
+      <div class="featured">
         <h1>Featured brews selection</h1>
         <h3>Dreamweaver's Delight</h3>
-        <img src="/images/beer-selection.png" alt="" srcset="" />
-      </div> -->
+        <img id="brew" src="/images/beer-selection.png" alt="" srcset="" />
+        <div class="brew-selection">
+          <h3 id="brews">Troll Themed</h3>
+          <ul class="brew-item">
+            <li>Troll's Tooth Stout'</li>
+            <li>Rockgrinder Ale</li>
+            <li>Bridgekeeper’s Bitter</li>
+            <li>Bogbrew Mead</li>
+            <li>Mountain Maw Lager</li>
+          </ul>
+          <h3>Magical and Mystical Brews</h3>
+          <ul class="brew-item">
+            <li>Arcane Amber Ale</li>
+            <li>Witchlight Whiskey</li>
+            <li>Frostfire Draught</li>
+            <li>Elixir of Euphoria</li>
+            <li>Sorcerer’s Suds</li>
+          </ul>
+          <h3>Rustic and Humorous</h3>
+          <ul class="brew-item">
+            <li>Mudslide Malty Porter</li>
+            <li>Drunken Drummer Doppelbock</li>
+            <li>Shatterkeg Saison</li>
+            <li>Grogfather’s Gulp</li>
+            <li>Goblin Guzzle</li>
+          </ul>
+          <h3>Strong Brews with a Punch</h3>
+          <ul class="brew-item">
+            <li>Ogre’s Overproof</li>
+            <li>Dragonfire IPA</li>
+            <li>Warhammer Wheat Wine</li>
+            <li>Behemoth’s Barleywine</li>
+            <li>Troll Tamer Triple Ale</li>
+          </ul>
+        </div>
+      </div>
+      <div id="about" class="about-us">
+        <h2>About us</h2>
+        <p id="about-paragraph">
+          Welcome to the Tipsy Troll Tavern, where the warmth of a roaring
+          hearth meets the laughter of adventurers and locals alike. Nestled in
+          the heart of the village, our tavern is a timeless retreat, offering a
+          refuge from the trials of the outside world. Whether you're an
+          adventurer returning from a long journey, a local looking for a cozy
+          spot to unwind, or a traveler seeking a taste of the village's finest
+          brews, the Tipsy Troll is the place to be. Step inside, and you’ll be
+          greeted by the comforting glow of wooden beams and the crackling of a
+          stone hearth, where stories are shared, laughter echoes, and
+          friendships are forged. Our tavern’s walls are adorned with relics
+          from distant lands—trophies, weapons, and trinkets from travelers
+          who’ve left a piece of their journey behind. It's these stories that
+          make the Tipsy Troll a place of magic and wonder. At the heart of the
+          Tipsy Troll lies our dedication to serving exceptional brews. From our
+          legendary Dreamweaver’s Delight to the rich, amber notes of Troll’s
+          Gold Ale, we pride ourselves on crafting drinks that leave a lasting
+          impression. But we don’t stop at great drinks. Our kitchen is filled
+          with the aromas of hearty meals, from rich venison stews to freshly
+          baked honey-glazed bread—perfectly paired with your favorite brew. As
+          the sun sets, the tavern comes alive with music, storytelling, and
+          games. Join us by the fire for an evening of merriment, or share your
+          own tales of adventure with fellow travelers. Whether you're enjoying
+          the tunes of a wandering bard, engaging in a friendly game of cards,
+          or simply enjoying the company of good friends, there’s always
+          something happening at the Tipsy Troll Tavern. Come for the brews,
+          stay for the stories, and leave with memories that will last a
+          lifetime. Your seat by the fire is waiting.
+        </p>
+      </div>
+      <div id="contacts" class="contact">
+        <div class="form">
+          <form action="">
+            <h2>Contact us</h2>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name.." />
+
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" placeholder="Last name.." />
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="Norway">Norway</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Danmark">Danmark</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              name="subject"
+              id="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <footer><p id="copyright">2024 Tipsy Troll Tavern. All Rights Reserved.</p></footer>
     </div>
   </body>
 </html>

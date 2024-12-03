@@ -6,6 +6,12 @@
   --Text: #333333;
 }
 
+@media (max-width: 768px){
+  .form {
+    padding: 1rem;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,18 +22,51 @@
 body {
   background-color: var(--Background);
   color: var(--primarycolor);
+  border: 5px double #ffd700;
 }
 
-.top-nav {
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Uncial Antiqua Regular";
+}
+
+.nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
 .nav ul {
   margin-top: 1rem;
   display: flex;
+  margin-left: 4rem;
   list-style: none;
   gap: 2rem;
 }
@@ -49,6 +88,10 @@ a {
   margin-top: 2rem;
 }
 
+.hero-image img {
+  width: 50%;
+}
+
 .description {
   display: flex;
   justify-content: center;
@@ -56,28 +99,19 @@ a {
   margin-top: 2rem;
 }
 
+.featured,
 article {
-  text-align: center;
-  max-width: 1000px;
-}
-
-.featured {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }
 
-#brew {
-  margin-top: 2rem;
-  width: 400px;
-}
-
 .brew-selection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  margin: 50px auto;
+  margin: 50px;
 }
 
 .about-us {
@@ -86,9 +120,27 @@ article {
   align-items: center;
 }
 
-#about-paragraph,
-.more-text {
+article,
+p,
+li {
+  max-width: 800px;
+  line-height: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Text);
+}
+
+
+
+.form {
   max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f4ea93;
+  border: 1px solid var(--Secondary);
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 input[type="text"],
@@ -102,6 +154,15 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background-color: #fdf5e6;
+  font-size: 1rem; 
+  color: var(--Text); 
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
 }
 
 input[type="submit"] {
@@ -111,21 +172,25 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
 }
 
 input[type="submit"]:hover {
   background-color: #5aca5e;
 }
 
-.form {
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
 }
 
-h2 {
-  margin-bottom: 2rem;
+.contact h2 {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -133,3 +198,13 @@ footer {
   justify-content: center;
   opacity: 50%;
 }
+
+@font-face {
+  font-family: "Uncial Antiqua Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uncial Antiqua Regular"),
+    url("UncialAntiqua-Regular.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
